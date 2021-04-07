@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+.my-navbar ul {
+  list-style-type: none;
+  display: flex;
+  height: 2rem;
+  align-items: stretch;
+}
+.my-navbar ul li {
+  background-color: #292e34;
+  flex: 1;
+}
+.my-navbar ul li a {
+  display: flex;
+  transition: color 0.2s ease-in-out;
+  color: #ccc;
+  text-decoration: none;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.my-navbar ul li a:hover {
+  background-color: #393f44;
+  color: white;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.my-header {
+  grid-row: 1;
+  font-size: x-large;
+  line-height: 1.5rem;
+}
+.my-header .my-header-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.my-header .my-header-content .site-title {
+  text-align: left;
+  font-family: "Charter";
+}
+.my-header .my-header-content .site-title h1 {
+  letter-spacing: 0.18rem;
+  text-transform: uppercase;
+}
+.my-header .my-header-content .portrait {
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0.5rem;
+  border: solid 2px white;
+}
+
+.projects-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  line-height: 1.75rem;
+  font-size: 1.3rem;
+}
+.projects-container .project {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 2fr;
+  gap: 2rem;
+}
+.projects-container .project header {
+  grid-column: 1;
+  grid-row: 1;
+  width: 8rem;
+  text-align: right;
+  border-top: solid 2px black;
+  font-family: "Charter";
+  font-size: large;
+  font-weight: bold;
+  padding-top: 0.25rem;
+}
+.projects-container .project main {
+  grid-column: 2;
+  grid-row: 1;
+}
+.projects-container .project main p {
+  padding-bottom: 1rem;
+}
+
+html {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1366px) 1fr;
+  place-items: stretch;
+}
+html body {
+  min-height: 100vh;
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+html body #main {
+  grid-row: 2;
+  place-self: stretch;
+  display: grid;
+  font-family: "Fira Sans", sans-serif;
+}
+html body #main .page-title {
+  text-align: center;
+  font-size: x-large;
+  padding: 2rem 0 2rem 0;
+  font-family: "Charter";
+}
+
+#main {
+  grid-template-rows: 1fr auto;
+}
+
+.my-navbar {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.main-content {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@media (min-width: 500px) {
+  #main {
+    grid-template-rows: auto 1fr;
+  }
+
+  .main-content {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .my-navbar {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+.my-header {
+  grid-row: 1;
+  font-size: x-large;
+  line-height: 1.5rem;
+
+  .my-header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+
+    .site-title {
+      text-align: left;
+      font-family: "Charter";
+
+      h1 {
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .portrait {
+      width: 70px;
+      height: auto;
+      border-radius: 50%;
+      margin: 0.5rem;
+      border: solid 2px white;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@use "./modules/navbar";
+@use "./modules/reset";
+@use "./modules/header";
+@use "./modules/projects";
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+html {
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1366px) 1fr;
+  place-items: stretch;
+
+  body {
+    min-height: 100vh;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    #main {
+      grid-row: 2;
+      place-self: stretch;
+      display: grid;
+      font-family: "Fira Sans", sans-serif;
+
+      .page-title {
+        text-align: center;
+        font-size: x-large;
+        padding: 2rem 0 2rem 0;
+        font-family: "Charter";
+      }
+    }
+  }
+}
+
+#main {
+  grid-template-rows: 1fr auto;
+}
+
+.my-navbar {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.main-content {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+@media (min-width: 500px) {
+  #main {
+    grid-template-rows: auto 1fr;
+  }
+
+  .main-content {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .my-navbar {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
