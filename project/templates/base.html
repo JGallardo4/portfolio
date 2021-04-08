@@ -33,32 +33,17 @@
 
     <body>
         <header class="my-header">
-            <a class="my-header-content" href="/">
-                <img class="portrait" src="/img/portrait.jpg"
-                    alt="Juan Gallardo's portrait
-                    picture">
+            <img class="portrait" src="/img/portrait.jpg"
+                alt="Juan Gallardo's portrait
+                picture">
 
-                <section class="site-title">
-                    <h1>Juan Gallardo</h1>
-                    <p>Web Developer</p>
-                </section>
-            </a>
+            <section class="site-title">
+                <h1>Juan Gallardo</h1>
+                <p>Web Developer</p>
+            </section>
         </header>
 
         <main id="main">
-            <nav class="my-navbar">
-                <ul>
-                    <li>
-                        <a href="/"> <i data-feather="home"></i> </a>
-                    </li>
-                    <li>
-                        <a href="/projects/"> Projects </a>
-                    </li>
-                    <li>
-                        <a href="/resume/"> Resume </a>
-                    </li>
-                </ul>
-            </nav>
             <section class="main-content">
                 {% block content %}
                 {% endblock %}
@@ -69,7 +54,7 @@
 
         <script>
             feather.replace()
-          </script>
+        </script>
     </body>
 </html>
 <!DOCTYPE html>

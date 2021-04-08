@@ -1,3 +1,5 @@
+@use "./colors" as *;
+
 .projects-container {
   display: grid;
   gap: 1rem;
@@ -16,7 +18,7 @@
       grid-row: 1;
       width: 8rem;
       text-align: right;
-      border-top: solid 2px black;
+      border-top: solid 2px $color;
       font-family: "Charter";
       font-size: large;
       font-weight: bold;
