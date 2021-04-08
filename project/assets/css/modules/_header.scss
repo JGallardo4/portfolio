@@ -33,3 +33,9 @@
     border: solid 2px white;
   }
 }
+
+@media (max-width: 1370px) {
+  .my-header {
+    padding: 0;
+  }
+}
