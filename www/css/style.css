@@ -166,7 +166,7 @@ a {
 .my-header {
   grid-row: 1;
   font-size: x-large;
-  line-height: 1.5rem;
+  line-height: 1.8rem;
 }
 .my-header .my-header-content {
   display: flex;
@@ -216,6 +216,9 @@ a {
   font-weight: bold;
   padding-top: 0.25rem;
 }
+.projects-container .project header .links {
+  padding-top: 1rem;
+}
 .projects-container .project main {
   grid-column: 2;
   grid-row: 1;
@@ -224,18 +227,29 @@ a {
   padding-bottom: 1rem;
 }
 
-.external-links {
+.home-container {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  place-items: center;
+}
+.home-container .slogan {
+  grid-column: 1;
+  font-size: xx-large;
+}
+.home-container .external-links {
+  grid-column: 2;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   display: flex;
   flex-direction: column;
 }
-.external-links li {
+.home-container .external-links li {
   display: flex;
   align-items: center;
 }
-.external-links a {
+.home-container .external-links a {
   padding: 1rem;
 }
 
