@@ -1,8 +1,9 @@
 @use "./colors" as *;
 
 .projects-container {
+  padding: 4rem 0 4rem 0;
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
   line-height: 1.75rem;
   font-size: 1.3rem;
 
@@ -15,16 +16,32 @@
     header {
       grid-column: 1;
       grid-row: 1;
-      width: 8rem;
+      width: 12rem;
       text-align: right;
       border-top: solid 2px $color;
       font-family: "Charter";
       font-size: large;
       font-weight: bold;
-      padding-top: 0.25rem;
+      padding-top: 0.5rem;
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+
+      a {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.5rem;
+        align-items: center;
+
+        h3 {
+          grid-column: 1;
+          text-align: right;
+        }
+
+        svg {
+          grid-column: 2;
+        }
+      }
     }
 
     main {
@@ -40,11 +57,17 @@
       display: flex;
       gap: 2rem;
       padding-left: 1rem;
+      padding-top: 1.5rem;
+
+      h4 {
+        display: flex;
+        gap: 0.5rem;
+      }
 
       ul {
         list-style: disc;
         padding-top: 0.5rem;
-        padding-left: 1.85rem;
+        padding-left: 1.96rem;
       }
     }
 

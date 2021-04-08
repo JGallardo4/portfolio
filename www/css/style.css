@@ -167,8 +167,9 @@ table {
 }
 
 .projects-container {
+  padding: 4rem 0 4rem 0;
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
   line-height: 1.75rem;
   font-size: 1.3rem;
 }
@@ -181,16 +182,29 @@ table {
 .projects-container .project header {
   grid-column: 1;
   grid-row: 1;
-  width: 8rem;
+  width: 12rem;
   text-align: right;
   border-top: solid 2px white;
   font-family: "Charter";
   font-size: large;
   font-weight: bold;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+.projects-container .project header a {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+}
+.projects-container .project header a h3 {
+  grid-column: 1;
+  text-align: right;
+}
+.projects-container .project header a svg {
+  grid-column: 2;
 }
 .projects-container .project main {
   grid-column: 2;
@@ -203,11 +217,16 @@ table {
   display: flex;
   gap: 2rem;
   padding-left: 1rem;
+  padding-top: 1.5rem;
+}
+.projects-container .project .stack h4 {
+  display: flex;
+  gap: 0.5rem;
 }
 .projects-container .project .stack ul {
   list-style: disc;
   padding-top: 0.5rem;
-  padding-left: 1.85rem;
+  padding-left: 1.96rem;
 }
 .projects-container .project .project-image {
   grid-column: 3;
@@ -265,6 +284,8 @@ html body .main .page-title {
 .main .slogan {
   grid-column: 1;
   font-size: xx-large;
+  line-height: 2.5rem;
+  text-align: center;
 }
 .main .external-links {
   grid-column: 2;
