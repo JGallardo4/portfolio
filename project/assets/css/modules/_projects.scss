@@ -2,14 +2,13 @@
 
 .projects-container {
   display: grid;
-  gap: 1rem;
-  padding: 1rem 2.5rem 1rem 2.5rem;
+  gap: 2rem;
   line-height: 1.75rem;
   font-size: 1.3rem;
 
   .project {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
     grid-template-rows: 2fr;
     gap: 2rem;
 
@@ -36,6 +35,25 @@
       p {
         padding-bottom: 1rem;
       }
+    }
+
+    .stack {
+      display: flex;
+      gap: 2rem;
+      padding-left: 1rem;
+
+      .stack-list {
+        list-style: disc;
+        padding-top: 0.5rem;
+        padding-left: 1.85rem;
+      }
+    }
+
+    .project-image {
+      grid-column: 3;
+      width: 25vw;
+      height: auto;
+      border: solid 2px $color;
     }
   }
 }

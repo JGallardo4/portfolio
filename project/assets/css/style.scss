@@ -19,7 +19,7 @@ html {
     display: grid;
     grid-template-rows: auto 1fr;
 
-    #main {
+    .main {
       grid-row: 2;
       place-self: stretch;
       display: grid;
@@ -49,7 +49,7 @@ html {
   grid-column: 1;
 }
 
-.main-container {
+.main {
   display: grid;
   grid-template-columns: 1fr auto;
   place-items: center;
@@ -107,12 +107,22 @@ html {
   width: 1px;
 }
 
+::selection {
+  background: $color;
+  color: black;
+}
+
 a {
   transition: color 0.2s ease-in-out;
-  color: $color;
+  color: inherit;
   text-decoration: none;
 
   &:hover {
-    color: $highlight;
+    color: $secondary-highlight !important;
   }
+}
+
+a.header-link,
+a.link {
+  color: $main-highlight;
 }
