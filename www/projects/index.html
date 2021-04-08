@@ -28,6 +28,7 @@
             /*to prevent Firefox FOUC, this must be here*/
             let FF_FOUC_FIX;
         </script>
+        <script src="https://unpkg.com/feather-icons"></script>
     </head>
 
     <body>
@@ -48,13 +49,10 @@
             <nav class="my-navbar">
                 <ul>
                     <li>
-                        <a href="/"> Home </a>
+                        <a href="/"> <i data-feather="home"></i> </a>
                     </li>
                     <li>
                         <a href="/projects/"> Projects </a>
-                    </li>
-                    <li>
-                        <a href="/about/"> About </a>
                     </li>
                     <li>
                         <a href="/resume/"> Resume </a>
@@ -73,6 +71,22 @@
             <h3>Portfolio</h3>
         </header>
         <main>
+            <section class="links">
+                <ul>
+                    <li>
+                        <a href="/"> <i data-feather="globe"></i> </a>
+                    </li>
+                    <li>
+                        <a href="/projects/"> <i data-feather="github"></i> </a>
+                    </li>
+                    <li>
+                        <a href="/about/"> About </a>
+                    </li>
+                    <li>
+                        <a href="/resume/"> Resume </a>
+                    </li>
+                </ul>
+            </section>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Earum,
@@ -221,6 +235,10 @@
         </section>
 
         <footer></footer>
+
+        <script>
+            feather.replace()
+          </script>
     </body>
 </html>
 <!DOCTYPE html>

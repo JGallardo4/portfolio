@@ -224,6 +224,21 @@ a {
   padding-bottom: 1rem;
 }
 
+.external-links {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.external-links li {
+  display: flex;
+  align-items: center;
+}
+.external-links a {
+  padding: 1rem;
+}
+
 html {
   overflow-y: scroll;
   display: grid;

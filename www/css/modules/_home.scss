@@ -1,0 +1,14 @@
+.external-links {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    padding: 1rem;
+  }
+}
