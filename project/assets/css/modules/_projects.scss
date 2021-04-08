@@ -22,10 +22,9 @@
       font-size: large;
       font-weight: bold;
       padding-top: 0.25rem;
-
-      .links {
-        padding-top: 1rem;
-      }
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
     }
 
     main {
@@ -42,7 +41,7 @@
       gap: 2rem;
       padding-left: 1rem;
 
-      .stack-list {
+      ul {
         list-style: disc;
         padding-top: 0.5rem;
         padding-left: 1.85rem;
@@ -51,7 +50,7 @@
 
     .project-image {
       grid-column: 3;
-      width: 25vw;
+      width: 25rem;
       height: auto;
       border: solid 2px $color;
     }

@@ -188,9 +188,9 @@ table {
   font-size: large;
   font-weight: bold;
   padding-top: 0.25rem;
-}
-.projects-container .project header .links {
-  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .projects-container .project main {
   grid-column: 2;
@@ -204,14 +204,14 @@ table {
   gap: 2rem;
   padding-left: 1rem;
 }
-.projects-container .project .stack .stack-list {
+.projects-container .project .stack ul {
   list-style: disc;
   padding-top: 0.5rem;
   padding-left: 1.85rem;
 }
 .projects-container .project .project-image {
   grid-column: 3;
-  width: 25vw;
+  width: 25rem;
   height: auto;
   border: solid 2px white;
 }
