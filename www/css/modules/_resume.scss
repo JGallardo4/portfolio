@@ -1,0 +1,17 @@
+.resume {
+  align-self: start;
+  $width: 96vw;
+  background-color: white;
+  width: $width;
+  height: $width * 1.414;
+  margin: 2rem 0 2rem 0;
+}
+
+@media (min-width: 800px) {
+  .resume {
+    $width: 70vw;
+    background-color: white;
+    width: $width;
+    height: $width * 1.414;
+  }
+}

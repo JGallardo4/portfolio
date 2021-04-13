@@ -294,6 +294,21 @@ table {
     justify-self: center !important;
   }
 }
+.resume {
+  align-self: start;
+  background-color: white;
+  width: 96vw;
+  height: 135.744vw;
+  margin: 2rem 0 2rem 0;
+}
+
+@media (min-width: 800px) {
+  .resume {
+    background-color: white;
+    width: 70vw;
+    height: 98.98vw;
+  }
+}
 html {
   overflow-y: scroll;
   display: grid;
